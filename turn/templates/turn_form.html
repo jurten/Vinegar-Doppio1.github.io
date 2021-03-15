@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/turn_styles.css' %}">
+    <div id="turn_title", name"turn_title", class="turn">
+    <h1 class="mt-2">Turnos</h1>
+    <hr class="mt-0 md-4" color="black"></hr>
+    <p>Usted ha accedido a la página de turnos, desde aquí podrá pedir o consultar su turno
+    usando los campos que se encuentran a continuación.
+    <br></br>
+    Para Pedir su turno simplemente llene los campos debajo del subtítulo "<b>Pida su Turno</b>", luego ponga su puntero
+    sobre el botón que dice "<b>Pedir</b>" y listo, usted reservó su turno.
+    <br></br>
+    Por otra parte si desea consultar su turno, usted deberá usar el apartado debajo del subítulo
+    "<b>Consulte su turno</b>", donde llenará el campo para luego poner su puntero
+    sobre el botón que dice "<b>Consultar</b>". Una vez hecho esto será redireccionado a una página con la información de su turno.
+    De no tener uno se le notificará y podrá pedir uno.
+    <br></br>
+    Finalmente si usted accedió a este apartado por error puede usar la barra de navegación a su izquierda para moverse entre los distintos apartados.</p>
+    </div>
+    <div id="turn_subtitle1", name"turn_subtitle1", class="turn">
+    <h2 class="mt-2">Pida su turno</h2>
+    <hr class="mt-0 md-4" color="black"></hr>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit">
+    </form>
+    </div>
+    <div id="turn_subtitle2", name"turn_subtitle2", class="turn">
+    <h2 class="mt-2">Consulte su turno</h2>
+    <hr class="mt-0 md-4" color="black"></hr>
+    <p>Ingrese su nombre:</p>
+    <h3>Consultar<h3>
+    </div>
+{% endblock  %}

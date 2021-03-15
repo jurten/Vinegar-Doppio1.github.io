@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/turn_styles.css' %}">
+    <div id="turn_title", name"turn_title", class="turn">
+    <h1 class="mt-2">Contacte Con Nosotros</h1>
+        <p><hr class="mt-0 md-4" color="black"></hr>
+        Horario de antención telefónica:
+        <li>Lunes a viernes de 09:00hs a 16:00hs</li>
+        <br>
+        Horario de antención presencial:</br>
+        Únicamente con turno previo hasta que la situación de la pandemia cambie<br>
+        </br>
+        Teléfonos de contacto:
+        <li>221-421-3756 (Teléfono de línea)</li>
+        <li>221-525-0538 (Teléfono para llamadas y Whatsapp)</li>
+        <br>
+        Dirección:
+        <li>Calle 8 N°835 e/ 48 y 49, <b>Gallería Williams</b>, piso 8, oficina 812</li></p>
+    </div>
+    <img src={% static 'images/map1.png' %}>
+{% endblock  %}

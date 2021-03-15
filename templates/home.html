@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/home_styles.css' %}">
+    <div id="home_title", name"home_title", class="home">
+    <h1 class="mt-2">Estudio Jurídico Laumann y Asociados Web</h1>
+    <hr class="mt-0 md-4" color="black"></hr>
+    <p>Bienvenido a la página web del Estudio Jurído Previsional Laumann y Asociados. En Esta
+    página podrá acceder a la información de contacto del Estudio Jurídico, la trayectoria
+    profesional de la Doctora <b>María Angélica Laumann</b>, además de poder pedir y controlar los
+    turnos a su nombre.</p>
+    </div>
+    <div id="home_subtitle1", name"home_subtitle1", class="home">
+    <h2 class="mt-2">Cómo uso este sitio web</h2>
+    <hr class="mt-0 md-4" color="black"></hr>
+    <p>Si usted tiene una consulta para hacerle a la Doctora revise primero el apartado <b>"<a href="{% url 'contact us' %}">Preguntas Frecuentes</a>"</b>.
+    Para hacerlo posicione su puntero sobre dicha palabra y presione allí, de esta forma usted será redireccionado.
+    <br></br>
+    Si por otra parte desea saber la información de contacto y la ubicación del Estudio, siga el mismo procedimiento con la palabra
+    <b>"<a href="{% url 'contact us' %}">Contacto</a>"</b>.
+    <br></br>
+    Si usted desea pedir o consultar su turno, una vez más siga el procedimiento descrito anteriormente pero con la palabra 
+    <b>"<a href="{% url 'turn page' %}">Turno</a>"</b>. Una vez allí podrá o bien pedir su turno llenando los campos requeridos o consultarlo
+    usando el apartado adecuado.
+    <br></br>
+    En la eventualidad de querer volver al <b>"<a href="{% url 'home' %}">Inicio</a>"</b> puede seguir el mismo procedimiento que para los casos anteriores.
+    <br></br>
+    Por último recuerde que la barra a su izquierda se utiliza para navegar y las palabras claves allí cumplen la misma función que las aquí descriptas.
+    </p>
+    </div>
+{% endblock  %}

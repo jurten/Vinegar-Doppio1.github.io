@@ -1,0 +1,20 @@
+to do:
+organize and create apps
+get the bullet points out of contact and FAQ
+Desing and implement Footer
+Desing and implement Header
+Desing and implement Slider
+Desing Users
+Enhance FAQ
+
+apps to create:
+FAQ
+Contact
+NavBar
+
+    <div id="turn_subtitle2", name"turn_subtitle2", class="turn">
+    <h2 class="mt-2">Consulte su turno</h2>
+    <hr class="mt-0 md-4" color="black"></hr>
+    <p>Ingrese su nombre:</p>
+    <h3>Consultar<h3>
+    </div>
